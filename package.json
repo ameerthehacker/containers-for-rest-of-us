@@ -1,0 +1,18 @@
+{
+  "name": "kickstarting-oss-journey",
+  "version": "0.0.1",
+  "description": "deck for my talk on `kickstarting your OSS journey`",
+  "main": "slides.js",
+  "scripts": {
+    "start": "mdx-deck ./deck.mdx",
+    "build": "mdx-deck build ./deck.mdx"
+  },
+  "repository": "https://github.com/ameerthehacker/kickstarting-your-oss-journey.git",
+  "author": "ameerthehacker",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {
+    "mdx-deck": "3.1.0"
+  }
+}

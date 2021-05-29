@@ -1,0 +1,109 @@
+import { yellow  } from 'mdx-deck/themes'
+import ThankYou from './images/thank-you.gif';
+import Matrix from './images/matrix.png';
+import SysCall from './images/sys-call.png';
+import Unshare from './images/unshare.png';
+import Tensed from './images/tensed.gif';
+
+export const theme = yellow;
+
+# Howdy 👋
+## I'm Ameer Jhan 🤓
+### @ameerthehacker
+### Ex SDE II @ OLX People 🏛
+---
+## Little about me 👨‍💻
+
+- I maintain **react-lazyload** which has around 4k 🌟
+- I also build other smoll tools to help myself and others
+- Author @ freecodecamp
+- Marvel fan 👨‍🎤
+- Cat Person 🐈
+- Love Stickers 💄
+---
+### Containers for rest of us 🎤
+
+---
+## Definition of Container 🤷
+
+```
+Containers are isolated from 
+one another and bundle their own software, 
+libraries and configuration files
+```
+---
+### You want to know what exactly it is?
+
+<img src={Matrix} />
+
+---
+# Step 1
+
+* Forget containers
+---
+# Step 2
+
+## Let us just try to do the following
+
+* Avoid program from killing another process
+* Avoid program from updating my hostname
+* Avoid program from reading my secret file
+
+---
+### First things First
+
+```c
+#include <stdio.h>
+
+int main () {
+   ...
+   fp = fopen("file.txt","r");
+   ...
+}
+```
+---
+## How it works
+
+<img src={SysCall} />
+
+---
+## What is a Space?
+
+* Abstraction of resources available to a program
+* Spaces divided into *namespaces*
+* Some of the namespaces are
+ - Process ID
+ - Mount
+ - Interprocess Communication
+ - Network (NET)
+ - UNIX Time Sharing
+
+---
+## Create new namespace
+
+<img src={Unshare} />
+
+---
+## Enough is enough, let us demo
+
+<img src={Tensed} />
+
+---
+## Mental Modal
+
+* Unshare command was our container runtime
+* Containerd is docker's container runtime (extra edge cases)
+* Rootfs management and other tools (docker)
+
+---
+## What does this all say?
+
+* Containers are faster than VM because container is just another process running on your OS
+* When you download ubuntu or alphine image you are just downloading bin files not the entire OS
+* Container image built for one OS cannot run on another (unlike VM) because they use OS specific syscall
+* Only Windows and Linux can natively run container, if you are running linux container image in mac you will require a linux VM
+
+---
+## Thank You 💙 🙏
+
+<img src={ThankYou} />
